@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 50px;
+    /* margin-bottom: 120px; */
+}
+
+.cr-ac {
+    width: 700px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    /* background: linear-gradient(90deg, #194F4A 0%, rgba(27, 89, 84, 0.75) 100%); */
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: 2px solid #19ddd3;
+    /* background-color: white; */
+    /* color: black; */
+
+}
+
+.dropdown img {
+    /* width: 40px;
+    height: 40px; */
+    cursor: pointer;
+    /* background-color: brown; */
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.dropdown-content li a {
+    /* background-color: #e2384f; */
+    color: white;
+}
+
+.dropdown-content li a:hover {
+    /* background-color: #dd1933; */
+    color: white;
+}
+
+.cr-ac h2 {
+    font-size: 25px;
+    /* margin-bottom: 20px; */
+    display: flex;
+    align-items: center;
+    /* จัดเนื้อหาให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดเนื้อหาให้อยู่กลางแนวนอน */
+}
+
+.red-asterisk {
+    color: red;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+    text-align: left;
+}
+
+.input-container p {
+    /* margin-bottom: 10px; */
+}
+
+.input-container input {
+    width: auto;
+    /* height: 40px; */
+    padding: 10px;
+    /* border: none; */
+    /* border-radius: 50px; */
+    /* margin-bottom: 10px; */
+}
+
+.input-container input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('../images/calendar\ white.png');
+    background-size: cover;
+    right: 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* จัดสองปุ่มให้อยู่ทางด้านขวาและซ้าย */
+    width: 100%; /* ให้ container ครอบปุ่มอยู่กึ่งกลางของหน้าจอ */
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลางของหน้าจอ */
+}
+
+.login-button-form-clear[type="button"] {
+    width: 48%; /* ให้ปุ่มมีขนาดเล็กเพื่อให้สอดคล้องกับความกว้างที่กำหนดใน container */
+    padding: 10px;
+    /* color: black; */
+    /* border: none; */
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #e74c3c;
+    font-weight: 200;
+}
+
+.login-button-form-clear[type="button"]:hover {
+    background-color: #ff6347;
+}
+
+.login-button-form-create[type="button"] {
+    width: 48%; /* ให้ปุ่มมีขนาดเล็กเพื่อให้สอดคล้องกับความกว้างที่กำหนดใน container */
+    padding: 10px;
+    /* color: black; */
+    /* border: none; */
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #227fd6;
+    font-weight: 200;
+}
+
+.login-button-form-create[type="button"]:hover {
+    background-color: #378ee0;
+}
+
+.signup-link {
+    text-align: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 15px; */
+}
+
+.signup-link span {
+    color: #fff;
+}
+
+.signup-link .signup {
+    color: #1debe0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 200;
+}
+
+.signup:hover {
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+    margin-left: 5px;
+    color: #25c5bd;
+    text-decoration: underline; /* เพิ่มเส้นใต้ข้อความเมื่อ hover (ถ้าคุณต้องการ) */
+}
+
+.input-container input[type="username"],
+.input-container input[type="email"],
+.input-container input[type="date"],
+.input-container input[type="password"],
+.input-container input[type="password"] {
+    padding-left: 20px;
+    /* border: 2px solid #19ddd3; */
+    /* background-color: white; */
+    /* color: black; */
+}
+
+.input-container [type="username"] {
+    width: auto;
+    padding: 10px 30px 10px 10px;
+    /* เพิ่มช่องเพื่อให้ภาพไม่ทับข้อความ */
+    /* border: none; */
+    /* border-radius: 30px; */
+    /* margin-bottom: 10px; */
+    background-image: url('../images/user.png');
+    /* URL ของภาพที่คุณต้องการใช้ */
+    background-repeat: no-repeat;
+    /* ไม่ให้รูปภาพทำซ้ำ */
+    background-position: right 10px center;
+    /* จัดตำแหน่งภาพที่ต้องการ (ขวาตรงกลาง) */
+    background-size: 20px 20px;
+    /* ขนาดของภาพ */
+    padding-right: 30px;
+    /* เพิ่มช่องว่างข้างขวาเพื่อไม่ให้ข้อความทับภาพ */
+}
+
+.input-container [type="email"] {
+    width: auto;
+    padding: 10px 30px 10px 10px;
+    /* เพิ่มช่องเพื่อให้ภาพไม่ทับข้อความ */
+    /* border: none; */
+    /* border-radius: 30px; */
+    /* margin-bottom: 10px; */
+    background-image: url('../images/mail\ b.png');
+    /* URL ของภาพที่คุณต้องการใช้ */
+    background-repeat: no-repeat;
+    /* ไม่ให้รูปภาพทำซ้ำ */
+    background-position: right 10px center;
+    /* จัดตำแหน่งภาพที่ต้องการ (ขวาตรงกลาง) */
+    background-size: 20px 20px;
+    /* ขนาดของภาพ */
+    padding-right: 30px;
+    /* เพิ่มช่องว่างข้างขวาเพื่อไม่ให้ข้อความทับภาพ */
+}
+
+.input-container [type="password"] {
+    width: auto;
+    padding: 10px 30px 10px 10px;
+    /* เพิ่มช่องเพื่อให้ภาพไม่ทับข้อความ */
+    /* border: none; */
+    /* border-radius: 30px; */
+    /* margin-bottom: 10px; */
+    background-image: url('../images/lock\ b.png');
+    /* URL ของภาพที่คุณต้องการใช้ */
+    background-repeat: no-repeat;
+    /* ไม่ให้รูปภาพทำซ้ำ */
+    background-position: right 10px center;
+    /* จัดตำแหน่งภาพที่ต้องการ (ขวาตรงกลาง) */
+    background-size: 20px 20px;
+    /* ขนาดของภาพ */
+    padding-right: 30px;
+    /* เพิ่มช่องว่างข้างขวาเพื่อไม่ให้ข้อความทับภาพ */
+}

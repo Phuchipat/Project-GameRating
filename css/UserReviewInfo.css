@@ -1,0 +1,1544 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.container-up {
+    max-width: 2000px;
+    /* กำหนดความกว้างสูงสุดของ container-up */
+    margin: 0 auto;
+    /* จัดให้เนื้อหาอยู่กลางแนวนอน */
+    padding: 20px;
+    /* เพิ่ม padding ด้านหน้าและด้านหลังของ container-up */
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 20px;
+    /* กำหนดระยะห่างระหว่าง element ย่อย */
+    /* background-color: #32a8a2; */
+    margin-top: 80px;
+}
+
+.hName {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.circle-image {
+    text-align: center;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 400px; */
+    /* width: 400px; */
+    /* กำหนดความกว้างและความสูงเท่ากันเพื่อทำให้เป็นรูปวงกลม */
+    /* border-radius: 50%; */
+    /* กำหนดรูปภาพให้เป็นวงกลม */
+    overflow: hidden;
+    /* ซ่อนส่วนที่เกินขอบของวงกลม */
+    margin: auto;
+    margin-bottom: 20px;
+    /* background-color: #145241; */
+}
+
+.circle-image img {
+    max-width: 100%;
+    /* ทำให้รูปภาพปรับขนาดตาม container-up แต่ยังคงคงสัดส่วน */
+    height: auto;
+}
+
+.avatarP {
+    margin-top: 20px;
+}
+
+#user-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.showName-showLv {
+    flex: 1;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 380px; */
+}
+
+.user-name-l {
+    margin-right: 12px;
+}
+
+.ff {
+    display: flex;
+    align-items: center;
+}
+
+.ff p {
+    margin-right: 15px;
+}
+
+.review-count {
+    font-size: 22px;
+    color: white;
+    margin-left: 50px;
+}
+
+.head {
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+}
+
+.review-count-post {
+    font-size: 22px;
+    color: white;
+    margin-left: 50px;
+    /* margin-right: 350px; */
+}
+
+.l-re-r {
+    margin-left: 20px;
+}
+
+.horizontal-lines {
+    width: auto;
+    height: 2px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.container-u {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1550px;
+    margin: 0 auto;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    /* background-color: #19ddd3; */
+}
+
+.vertical-line {
+    width: 2px;
+    height: 560px;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 1px rgb(255, 255, 255);
+}
+
+.left-u {
+    /* width: 800px; */
+    /* height: 570px; */
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-size: 40px;
+    /* margin-right: 40px; */
+    transition: background-color 0.3s, transform 0.3s;
+    /* background-color: #145241; */
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.right {
+    /* width: 800px; */
+    /* height: 570px; */
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-size: 40px;
+    /* margin-left: 40px; */
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    /* จัดตำแหน่งตัวอักษรให้อยู่ตรงกลาง */
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    flex-shrink: 0;
+    /* border-radius: 50px; */
+    border-radius: 30px 30px 0px 0px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #227fd6;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: 1px solid white;
+    color: white;
+    position: relative;
+}
+
+.game-name-u {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+
+button.btn-outline {
+    font-weight: 200;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    /* align-items: flex-end; */
+    width: 100%;
+    height: 100%;
+}
+
+button.edit-button-re {
+    width: 130px;
+    height: 45px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #2E86AB;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    /* margin-left: 10px; */
+    /* เพิ่มระยะห่างระหว่างปุ่ม */
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+button.delete-button-re {
+    width: 130px;
+    height: 45px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #e74c3c;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    /* margin-left: 10px; */
+    /* เพิ่มระยะห่างระหว่างปุ่ม */
+    cursor: pointer;
+    font-size: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 40px;
+}
+
+button.edit-button-re:hover {
+    background-color: #2e7691;
+}
+
+button.delete-button-re:hover {
+    background-color: #ff6347;
+    color: #FFF;
+}
+
+button.edit-button-post {
+    width: 130px;
+    height: 45px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #2E86AB;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    /* margin-left: 10px; */
+    /* เพิ่มระยะห่างระหว่างปุ่ม */
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+
+button.delete-button-post {
+    width: 130px;
+    height: 45px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #e74c3c;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    /* margin-left: 10px; */
+    /* เพิ่มระยะห่างระหว่างปุ่ม */
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 40px;
+}
+
+button.edit-button-post:hover {
+    background-color: #2e7691;
+}
+
+button.delete-button-post:hover {
+    background-color: #ff6347;
+    color: #FFF;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* จัดกึ่งกลางแนวตั้ง */
+    padding: 0 20px;
+    /* background-color: #227fd6; */
+    margin-top: 20px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    /* จัดกึ่งกลางแนวตั้ง */
+    padding: 0 10px;
+    /* background-color: #227fd6; */
+    margin-top: 20px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #32a8a2;
+    margin-left: 20px;
+    /* margin-top: 30px; */
+    /* position: relative; */
+
+}
+
+.circle img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.user-info {
+    margin-left: 30px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.user-info p {
+    margin-left: 20px;
+}
+
+.textAreaInfo {
+    margin: 0 auto;
+    width: 90%;
+    /* padding: 40px; */
+    /* background-color: #002fff; */
+}
+
+#userReview {
+    border: 2px solid #4FA39E;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 10px;
+    /* width: auto; */
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    justify-content: space-between;
+    /* padding: 50px; */
+}
+
+.heading p {
+    /* margin: 1; */
+    padding: 0 50px;
+    /* padding-left: 95px; */
+}
+
+.ff {
+    display: flex;
+    margin-top: 80px;
+    /* background-color: #19ddd3; */
+}
+
+.container-u {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-line-URI {
+    width: 1px;
+    height: auto;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 1px rgb(255, 255, 255);
+    /* margin-top: 1px; */
+    margin-bottom: 5px;
+}
+
+.rowURI1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.colURI1,
+.colURI2 {
+    margin: 5px;
+    padding: 10px;
+    /* border: 1px solid #fff; */
+    width: 100%;
+    text-align: center;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1200px;
+    /* height: 800px; */
+    /* height: auto; */
+    z-index: 1000;
+    /* background-color: white; */
+    border-radius: 30px;
+    /* border: 2px solid #19ddd3; */
+    /* overflow: auto; */
+    overflow: hidden;
+    /* เพิ่มการเลื่อนในกรณีที่เกินขนาดของ popup */
+    /* max-height: 90vh; */
+    height: auto;
+    /* กำหนดความสูงสูงสุดของ popup */
+    padding: 10px;
+    /* เพิ่มความสบายในการอ่าน */
+
+}
+
+.popup-content {
+    height: auto;
+    /* max-height: 80vh; */
+    /* กำหนดความสูงสูงสุด */
+    /* overflow-y: scroll; */
+    /* การให้มีสครอลเมื่อเกินขนาด */
+}
+
+.main-box-edit {
+    /* background-color: #fff; */
+    /* display: none; */
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    /* margin-bottom: 200px; */
+    border: 2px solid #19ddd3;
+}
+
+.review-input p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 25px;
+    padding-left: 60px;
+}
+
+.review-input h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.rating-rg p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    /* margin-top: 25px; */
+    /* margin-bottom: 15px; */
+    padding-left: 60px;
+}
+
+.review-input-text-ed {
+    /* padding-left: 40px; */
+    padding-top: 15px;
+    padding-left: 20px;
+    /* font-size: 25px; */
+    width: 90%;
+    height: 150px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+}
+
+.rating-rg .playing-star-rg,
+.story-star-rg,
+.efficiency-star-rg {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: rgb(155, 155, 155);
+    padding-left: 60px;
+}
+
+.playing-star-rg i,
+.story-star-rg i,
+.efficiency-star-rg i {
+    columns: #e6e6e6;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.playing-star-rg i.active,
+.story-star-rg i.active,
+.efficiency-star-rg i.active {
+    color: #ff9c1a;
+}
+
+.confirm-edits {
+    display: flex;
+    /* padding-left: 530px; */
+    justify-content: flex-end;
+}
+
+.back-edit {
+    background-color: #2E86AB;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-edit:hover {
+    background-color: #2e7691;
+    border: 2px solid #fff;
+}
+
+.confirm-edits-button {
+    background-color: #e74c3c;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.confirm-edits-button:hover {
+    background-color: #ff6347;
+    border: 2px solid #fff;
+}
+
+
+
+#overlay-po {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.popup-po {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1200px;
+    /* height: 800px; */
+    /* height: auto; */
+    z-index: 1000;
+    /* background-color: white; */
+    border-radius: 30px;
+    /* border: 2px solid #19ddd3; */
+    /* overflow: auto; */
+    overflow: hidden;
+    /* เพิ่มการเลื่อนในกรณีที่เกินขนาดของ popup */
+    /* max-height: 90vh; */
+    height: auto;
+    /* กำหนดความสูงสูงสุดของ popup */
+    padding: 10px;
+    /* เพิ่มความสบายในการอ่าน */
+
+}
+
+.popup-content-po {
+    height: auto;
+    /* max-height: 80vh; */
+    /* กำหนดความสูงสูงสุด */
+    /* overflow-y: scroll; */
+    /* การให้มีสครอลเมื่อเกินขนาด */
+}
+
+
+
+
+.main-box-post {
+    /* background-color: #fff; */
+    /* display: none; */
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    /* margin-bottom: 200px; */
+    border: 2px solid #19ddd3;
+}
+
+.main-box-post:hover #review-content-one,
+.main-box-post:hover #review-content-two {
+    color: #19ddd3;
+}
+
+.main-box-post #review-content-one:hover,
+.main-box-post #review-content-two:hover {
+    color: rgb(21, 231, 179);
+}
+
+.review-input-text-post {
+    /* padding-left: 40px; */
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 90%;
+    height: 150px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+}
+
+.review-input-post h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.review-input-post p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 25px;
+    padding-left: 60px;
+    /* background-color: #2ea8e0; */
+}
+
+.rating-post p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    /* margin-top: 25px; */
+    /* margin-bottom: 15px; */
+    /* padding-left: 60px; */
+    margin-left: 60px;
+}
+
+.rating-post .playing-star-post,
+.story-star-post,
+.efficiency-star-post,
+.other,
+.others {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: rgb(155, 155, 155);
+    padding-left: 60px;
+}
+
+.playing-star-post i,
+.story-star-post i,
+.efficiency-star-post i,
+.other i,
+.others i {
+    display: flex;
+    align-items: center;
+    columns: #e6e6e6;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.other i,
+.others i {
+    display: none;
+}
+
+.playing-star-post i.active,
+.story-star-post i.active,
+.efficiency-star-post i.active,
+.other i.active,
+.others i.active {
+    color: #ff9c1a;
+}
+
+.background-color-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+}
+
+.background-color-content2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+}
+
+
+/* CSS เพื่อซ่อนหน้าต่างรีวิวเมื่อเริ่มต้น */
+.review-window-content {
+    display: none;
+    border: 2px solid #19ddd3;
+
+}
+
+/* CSS สำหรับหน้าต่างรีวิวที่แสดง */
+.review-window-content.show {
+    display: block;
+}
+
+.review-window-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    z-index: 1000;
+}
+
+.review-window-content2 {
+    display: none;
+    border: 2px solid #19ddd3;
+
+}
+
+/* CSS สำหรับหน้าต่างรีวิวที่แสดง */
+.review-window-content2.show {
+    display: block;
+}
+
+.review-window-content2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    z-index: 1000;
+}
+
+
+.review-text-content p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    padding-left: 20px;
+    color: black;
+}
+
+.review-text-content2 p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    padding-left: 20px;
+    color: black;
+}
+
+textarea#review-input-content-one {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4FA39E;
+    border-radius: 10px;
+    resize: none;
+    height: 55px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+textarea#review-input-content-two {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4FA39E;
+    border-radius: 10px;
+    resize: none;
+    height: 55px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+.review-controls-content {
+    margin-top: 20px;
+}
+
+.review-controls-content2 {
+    margin-top: 20px;
+}
+
+.button-clear,
+.button-confirm,
+.button-back {
+    width: 150px;
+}
+
+.button-clear2,
+.button-confirm2,
+.button-back2 {
+    width: 150px;
+}
+
+#confirm-button-content {
+    background-color: #227fd6;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-button-content {
+    background-color: #2E86AB;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content:hover {
+    background-color: #ff6347;
+}
+
+#confirm-button-content:hover {
+    background-color: #378ee0;
+}
+
+#back-button-content:hover {
+    background-color: #2e7691;
+}
+
+#confirm-button-content2 {
+    background-color: #227fd6;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-button-content2 {
+    background-color: #2E86AB;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content2 {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content2:hover {
+    background-color: #ff6347;
+}
+
+#confirm-button-content2:hover {
+    background-color: #378ee0;
+}
+
+#back-button-content2:hover {
+    background-color: #2e7691;
+}
+
+.create-button-container {
+    display: flex;
+    /* padding-left: 530px; */
+    justify-content: flex-end;
+}
+
+.create-add-review-button {
+    display: none;
+    background-color: #19ddd3;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* margin-left: 700px; */
+    font-size: 20px;
+    /* margin-left: 10px; */
+}
+
+.create-add-review-button:hover {
+    background-color: #25c5bd;
+    border: 2px solid #fff;
+}
+
+.create-review-button-post {
+    background-color: #e74c3c;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* margin-left: 700px; */
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+.create-review-button-post:hover {
+    background-color: #ff6347;
+    border: 2px solid #fff;
+}
+
+#review-content-one {
+    cursor: pointer;
+    max-width: fit-content;
+    position: relative;
+}
+
+#review-content-one::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* ขนาดของเส้น */
+    background-color: rgb(21, 231, 179);
+    /* สีของเส้น */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    /* เพื่อให้มีเอฟเฟกต์ animation */
+    margin-bottom: -7px;
+}
+
+#review-content-one:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+#review-content-two {
+    cursor: pointer;
+    max-width: fit-content;
+    position: relative;
+}
+
+#review-content-two::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* ขนาดของเส้น */
+    background-color: rgb(21, 231, 179);
+    /* สีของเส้น */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    /* เพื่อให้มีเอฟเฟกต์ animation */
+    margin-bottom: -7px;
+}
+
+#review-content-two:hover::after {
+    transform: scaleX(1);
+}
+
+.conPostScore {
+    width: 100%;
+    /* background-color: #fff; */
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.rowPost {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.colPost {
+    flex: 1;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.col1Post {
+    /* background-color: #ffcccc; */
+    /* สีส้มอ่อน */
+}
+
+.col2Post {
+    /* background-color: #ccffcc; */
+    /* สีเขียวอ่อน */
+}
+
+.conReviewScore {
+    width: 100%;
+    /* background-color: #fff; */
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.rowReview {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.colReview {
+    flex: 1;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.col1Review {
+    /* background-color: #ffcccc; */
+    /* สีส้มอ่อน */
+}
+
+.col2Review {
+    /* background-color: #ccffcc; */
+    /* สีเขียวอ่อน */
+}
+
+.containerReviewInfo {
+    width: 100%;
+    /* background-color: #fff; */
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.rowContainerReviewInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* จัดให้อยู่ตรงกลางแนวนอน */
+}
+
+.col1Info,
+.col2Info {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    /* background-color: #ffcccc; */
+    /* สีส้มอ่อน */
+    border-radius: 8px;
+    /* ใส่มุมมนสี */
+}
+
+.col2Info {
+    /* background-color: #ccffcc; */
+    /* สีเขียวอ่อน */
+}
+
+.container-score-review {
+    margin-top: -0px;
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* background-color: #4a7cad; */
+    /* สีพื้นหลังของ Container */
+    font-size: 19px;
+    flex-wrap: wrap;
+}
+
+.col-content-review {
+    flex-grow: 1;
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    /* ทำให้เนื้อหาอยู่ในคอลัมน์ */
+    align-items: center;
+    /* ทำให้เนื้อหาอยู่ตรงกลางของ Col */
+}
+
+.col-content-review p {
+    margin-bottom: 15px;
+}
+
+.col-content-1-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #ffffff; */
+    /* สีพื้นหลังของ Col 1 */
+    color: black;
+    /* สีตัวอักษร Col 1 */
+    flex: 1;
+}
+
+.col-content-2-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #cce5ff; */
+    /* สีพื้นหลังของ Col 2 */
+    color: black;
+    /* สีตัวอักษร Col 2 */
+    flex: 1;
+}
+
+.col-content-3-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #d4edda; */
+    /* สีพื้นหลังของ Col 3 */
+    color: black;
+    /* สีตัวอักษร Col 3 */
+    flex: 1;
+}
+
+.col-content-4-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #f8d7da; */
+    /* สีพื้นหลังของ Col 4 */
+    color: black;
+    /* สีตัวอักษร Col 4 */
+    flex: 1;
+}
+
+@keyframes rotateInnerCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreShowReviewInfo {
+    --size: 70px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreShowReviewInfo::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreShowPostReview {
+    --size: 70px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreShowPostReview::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.container-score-post-review {
+    margin-top: 20px;
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* background-color: #f8f9fa; */
+    /* สีพื้นหลังของ Container */
+    font-size: 19px;
+    flex-wrap: wrap;
+}
+
+.col-content-post-review {
+    flex-grow: 1;
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column; /* ทำให้เนื้อหาอยู่ในคอลัมน์ */
+    align-items: center; /* ทำให้เนื้อหาอยู่ตรงกลางของ Col */
+}
+
+.col-content-post-review p {
+    margin-bottom: 15px;
+}
+
+.col-content-1-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #ffffff; */
+    /* สีพื้นหลังของ Col 1 */
+    color: black;
+    /* สีตัวอักษร Col 1 */
+    flex: 1;
+}
+
+.col-content-2-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #cce5ff; */
+    /* สีพื้นหลังของ Col 2 */
+    color: black;
+    /* สีตัวอักษร Col 2 */
+    flex: 1;
+}
+
+.col-content-3-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #d4edda; */
+    /* สีพื้นหลังของ Col 3 */
+    color: black;
+    /* สีตัวอักษร Col 3 */
+    flex: 1;
+}
+
+.col-content-4-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #f8d7da; */
+    /* สีพื้นหลังของ Col 4 */
+    color: black;
+    /* สีตัวอักษร Col 4 */
+    flex: 1;
+}
+
+.col-content-5-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #ffffff; */
+    /* สีพื้นหลังของ Col 1 */
+    color: black;
+    /* สีตัวอักษร Col 1 */
+    flex: 1;
+}
+
+.col-content-6-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #cce5ff; */
+    /* สีพื้นหลังของ Col 2 */
+    color: black;
+    /* สีตัวอักษร Col 2 */
+    flex: 1;
+}
+
+.containerSort {
+    width: 100%;
+    /* background-color: #a53f3f; */
+    max-width: 2000px;
+    margin: 0 auto;
+    /* สีแดงเข้ม */
+    color: #fff;
+    /* สีข้อความ */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-sizing: border-box;
+    /* margin-top: 20px; */
+    padding: 10px;
+}
+
+.rowSort {
+    display: flex;
+    /* justify-content: space-between; */
+    /* จัดให้อยู่ตรงกลางแนวนอน */
+}
+
+/* สีของแต่ละคอลัมน์ */
+.colSort1 {
+    flex: 1;
+    text-align: center;
+    /* background-color: #002fff; */
+    padding: 10px;
+    /* สีเหลืองอ่อน */
+}
+
+.colSort2 {
+    flex: 1;
+    text-align: center;
+    /* background-color: #66cc99; */
+    padding: 10px;
+    /* สีเขียวอ่อน */
+}
+
+.containerContentHistory {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    /* background-color: #a53f3f; */
+    /* สีแดงเข้ม */
+    color: #fff;
+    /* สีข้อความ */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-sizing: border-box;
+    /* margin-top: 20px; */
+    /* padding: 10px; */
+}
+
+.rowContentHistory {
+    display: flex;
+    /* justify-content: center; */
+    /* จัดให้อยู่ตรงกลางแนวนอน */
+}
+

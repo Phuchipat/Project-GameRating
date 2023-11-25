@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.ContrainerCategoryRating {
+    max-width: 1600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #6c7cda; */
+    margin: 0 auto;
+    z-index: 1;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.col {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.col1 {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    /* background-color: #ffcccb; */
+    margin-top: 30px;
+    text-align: center;
+}
+
+.col3 {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    /* background-color: #fff; */
+    color: black;
+    /* background-color: #ffa07a; */
+}
+
+.col4 {
+    flex: 1;
+    /* flex: 0.5; */
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    /* background-color: #fff; */
+    color: black;
+    /* background-color: #add8e6; */
+}
+
+.fontWeight {
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.add-category {
+    /* display: flex;
+    flex-direction: column; */
+    /* background-color: #aafaaa; */
+    background-color: #fff;
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.edit-category {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #facc8e; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.SelectCategoryMa{
+    border: 2px solid #19ddd3;
+}
+
+.delete-category {
+    /* background-color: #fda5a4; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.all-category {
+    /* background-color: #fda5a4; */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.all-category p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.AllGamePoints button {
+    border: 2px solid #1974dd;
+}
+
+.AllGamePoints button:hover {
+    background-color: #1974dd;
+    color: white;
+}
+
+.add-category,
+.edit-category,
+.delete-category,
+.all-category {
+    border: 3px solid #1974dd;
+    transition: border-color 0.3s;
+    position: relative;
+}
+
+#AddCategory,
+#EditCategory,
+#DeleteCategory,
+#DescCategory,
+#SearchCategoryMa {
+    background-color: #fff;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #1974dd;
+}
+
+.add-category button {
+    margin-left: auto;
+    background-color: #008CBA;
+    color: #fff;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 200;
+
+}
+
+.add-category button:hover {
+    background-color: #1c9dc9;
+    color: #fff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+.EditFooter {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.EditFooter .EditCategoryClear {
+    /* margin-left: auto; */
+    width: 330px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 200;
+
+}
+
+.EditFooter .EditCategoryClear:hover {
+    background-color: #ff6347;
+    color: #fff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+.edit-category button {
+    /* margin-left: auto; */
+    width: 330px;
+    background-color: #008CBA;
+    color: #fff;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 200;
+
+}
+
+.edit-category button:hover {
+    background-color: #1c9dc9;
+    color: #fff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+.delete-category button {
+    background-color: #008CBA;
+    color: #fff;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 200;
+
+}
+
+.delete-category button:hover {
+    background-color: #1c9dc9;
+    color: #fff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+#EditGameRatingCategory {
+    background-color: white;
+    border: 2px solid #19ddd3;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.edit-category {
+    margin-top: 10px;
+
+}
+
+#EditSeclect {
+    border: 2px solid #19ddd3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tableM {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.tableM  th {
+    color: black;
+}
+
+.tableHeadersName,
+.tableHeadersEmail,
+.tableHeadersDate,
+.tableHeadersStatus {
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.tableHeadersName:hover,
+.tableHeadersEmail:hover,
+.tableHeadersDate:hover,
+.tableHeadersStatus:hover {
+    background-color: #ebebeb;
+}
+
+.table tbody tr:hover {
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.sss {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: #e74c3c; */
+}
+
+/* เพิ่มสไตล์นี้เพื่อจำกัดจำนวนตัวอักษรและเพิ่มจุดไข่ปลา */
+.table td {
+    max-width: 170px;
+     /* ปรับความกว้างสูงสุดตามต้องการ */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ตัวเลือก: คุณสามารถเพิ่ม tooltip เพื่อแสดงเนื้อหาเต็มที่เมื่อโฮเวอร์ */
+.table td:hover {
+    overflow: visible;
+    white-space: normal;
+    z-index: 1;
+}

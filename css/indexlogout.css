@@ -1,0 +1,955 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #333cbb; */
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.overflow-hidden {
+    border: 3px solid transparent;
+}
+
+.overflow-hidden:hover {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.flex-none {
+    z-index: 999;
+}
+
+button.NavbarSearch {
+    border: 1px solid;
+    margin-left: 2px;
+}
+
+button.NavbarSearch:hover {
+    border: 1px solid;
+}
+
+.input-group input {
+    border: 1px solid;
+}
+
+#rattingBox {
+    margin-left: -280px;
+}
+
+#rattingBox,
+#CategoryNavbar,
+#ProfileNavbar {
+    margin-top: 25px;
+}
+
+#ProfileNavbar li a {
+    font-weight: 300;
+}
+
+#profile-menu {
+    /* display: flex; */
+    /* align-items: center; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ProName {
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+}
+
+.ProName p {
+    margin-left: 10px;
+}
+
+img.imgLogout {
+    width: 50px;
+    height: 30px;
+}
+
+#Pmenu li a {
+    /* color: black; */
+    font-weight: 200;
+}
+
+#Pmenu li:hover {
+    /* color: rgb(48, 118, 224);
+    background-color: #e7dddd;
+    border-radius: 10px; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 130px;
+    /* background-color: #108fe4; */
+}
+
+.left-content {
+    flex: 1;
+    /* padding: 20px; */
+    /* background-color: rgb(155, 62, 62); */
+}
+
+.bottom-content {
+    /* background-color: #108fe4; */
+    margin-top: 60px;
+}
+
+.top-content a {
+    display: flex;
+    align-items: center;
+}
+
+.image-icon {
+    width: 25px;
+    /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 25px;
+    /* ปรับความสูงตามที่คุณต้องการ */
+    margin-left: 10px;
+}
+
+.image-icon-review {
+    width: 25px;
+    /* ปรับความกว้างตามที่คุณต้องการ */
+    height: 25px;
+    /* ปรับความสูงตามที่คุณต้องการ */
+    margin-left: 5px;
+}
+
+.review-count-contrainer {
+    display: flex;
+    align-items: center;
+    
+    /* margin-bottom: 70px; */
+}
+
+.CategorySlider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.CategorySlider p {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.CategorySlider button {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.CategorySlider button:hover {
+    font-weight: bold;
+}
+
+.RattingSlider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.RattingSlider p {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.RattingSlider button {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+.RattingSlider button:hover {
+    font-weight: bold;
+}
+
+.text-game-name {
+    display: inline-block;
+    padding: 5px;
+    width: max-content;
+
+}
+
+.text-game-name:hover {
+    font-size: 1.7rem;
+    transition: font-size 0.3s;
+    font-weight: bold;
+    /* background-color: black; */
+}
+
+.text-review {
+    margin-left: 10px;
+}
+
+/* เพิ่มขนาดตัวหนังสือภายใน tooltip */
+.tooltip[data-tip] {
+    position: relative;
+}
+
+.tooltip[data-tip]:before {
+    content: attr(data-tip);
+    position: absolute;
+    background: rgb(255, 255, 255);
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    /* white-space: nowrap; */
+    /* display: none; */
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.tooltip:hover:before {
+    display: block;
+    font-size: 16px;
+}
+
+.sort-re {
+    display: flex;
+    align-items: center;
+}
+
+.sort-re p {
+    margin-right: 20px;
+}
+
+.horizontal-lines-f {
+    width: auto;
+    height: 2px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: #fff;
+}
+
+.horizontal-lines-d {
+    width: auto;
+    width: 100%;
+    height: 1px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    /* margin: 0 auto; */
+    /* margin-top: 25px; */
+    background-color: #fff;
+}
+
+.game-name {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    font-size: 25px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* จัดให้อยู่ตรงกลางแนวตั้ง */
+}
+
+.game-name a {
+    /* margin-right: 5px; */
+    /* ระยะห่างระหว่างข้อความและรูปภาพ */
+    /* margin-left: 85px; */
+    margin-top: -10px;
+    position: relative;
+}
+
+.game-name a::before,
+.game-name a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #10a8e4;
+    /* สีของเส้นวิ่ง */
+    transition: width 0.3s;
+    /* เพิ่มการเปลี่ยนแปลงความยาวเส้น */
+
+}
+
+.game-name a::before {
+    top: 100%;
+    left: 0;
+}
+
+.game-name a::after {
+    top: 100%;
+    right: 0;
+}
+
+.game-name a:hover::before,
+.game-name a:hover::after {
+    width: 50%;
+    /* ปรับความยาวของเส้นเมื่อ hover */
+}
+
+.content-f:hover .game-name a {
+    color: #10a8e4;
+    /* font-size: 25px; */
+    font-weight: bold;
+}
+
+.dropdownBox img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /* background-color: brown; */
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.report {
+    padding: 10px;
+    border-radius: 50%;
+    /* ทำให้เป็นวงกลม */
+    transition: background-color 0.3s;
+    /* เพิ่มการเปลี่ยนแปลงสีพื้นหลังเมื่อ hover */
+}
+
+.report:hover {
+    background-color: rgba(190, 190, 190, 0.562);
+    color: white;
+}
+
+.dropdown-content li a {
+    /* background-color: #e2384f; */
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-content li a:hover {
+    /* background-color: #dd1933; */
+    color: white;
+}
+
+.container-f {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 25px;
+    border-radius: 40px 40px 40px 40px;
+    border: 4px solid #fff;
+    transition: border-color 0.3s;
+    /* background-color: #004085; */
+    flex-wrap: wrap;
+}
+
+.container-f:hover {
+    border: 4px solid #19ddd3;
+    border-color: #19ddd3;
+}
+
+.circle-f {
+    width: 60px;
+    height: 60px;
+    /* height: auto; */
+    border-radius: 50%;
+    /* clip-path: circle(50% at 50% 50%); */
+    overflow: hidden;
+    /* border: 3px solid #32a8a2; */
+    /* margin-top: 5px; */
+    border: 3px solid #32a8a2;
+}
+
+.circle-f img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ให้รูปภาพเต็มตามขนาดของวงกลม */
+}
+
+.user-info-f {
+    margin-left: 30px;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+
+}
+
+.user-info-f p {
+    margin-left: 55px;
+    color: black;
+    margin-bottom: 10px;
+    /* margin-top: -50px; */
+}
+
+.left {
+    width: 30%;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 40px 0 0 40px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gameImage-f {
+    object-fit: cover;
+    /* จัดการให้รูปภาพเต็มภายในขอบ left */
+}
+
+.content-f {
+    flex: 1;
+    height: 370px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+    /* จัดเรียงเนื้อหาใน .content-f เป็นคอลัมน์ */
+    flex-wrap: wrap;
+}
+
+.hea {
+    display: flex;
+    /* margin-bottom: 10px; */
+}
+
+.relative {
+    height: 560px;
+    /* height: auto; */
+}
+
+
+/* เปลี่ยนสีของวงกลมในปุ่มการเปลี่ยนภาพ */
+.slide-button {
+    background-color: red;
+    /* สีแดง */
+    border: 2px solid white;
+    transition: background-color 0.3s;
+}
+
+#userReview-f {
+    flex-grow: 1;
+    /* ทำให้ #userReview-f ขยายตามความสูงที่เหลือ */
+    border: 2px solid #4FA39E;
+    border-radius: 20px;
+    resize: none;
+    padding: 15px;
+    font-size: 16px;
+    padding-left: 20px;
+    /* margin-left: 10px; */
+    margin-top: 5px;
+    background-color: white;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* ขยายตามความสูงของพื้นที่ภายใน*/
+    width: auto;
+    /* ทำให้ขยายตามความกว้าง */
+}
+
+.heading-f {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* เพิ่ม flex-wrap เพื่อให้ขึ้นบรรทัดใหม่เมื่อเกินขนาด */
+}
+
+.heading-f p {
+    margin: 1;
+    padding-left: 75px;
+    margin-top: 10px;
+    white-space: nowrap;
+    /* ให้ข้อความไม่ขึ้นบรรทัดใหม่ */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* ให้ข้อความที่เกินขนาดแสดง ... */
+}
+
+@media only screen and (max-width: 768px) {
+    .container-f {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        border-radius: 40px 40px 0 0;
+    }
+
+    .content-f {
+        border-radius: 0 0 40px 40px;
+    }
+
+    .user-info-f {
+        margin-left: 0;
+    }
+
+    #userReview-f {
+        margin-left: 0;
+    }
+
+    .heading-f {
+        justify-content: space-between;
+    }
+
+    .heading-f p {
+        padding-left: 0;
+    }
+}
+
+
+.main-box {
+    width: 400px;
+    height: 370px;
+    /* flex-shrink: 0; */
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    /* จัดให้เนื้อหาเรียงต่อกันแนวตั้ง */
+    align-items: center;
+    /* จัดให้เนื้อหาอยู่ตรงกลางแนวนอน */
+    justify-content: center;
+    /* จัดให้เนื้อหาอยู่ตรงกลางแนวตั้ง */
+    margin-bottom: 100px;
+    /* เพิ่มระยะห่างระหว่างกล่องด้านล่าง */
+    border: 4px solid #108fe4;
+    /* เพิ่มขอบกล่องใหญ่โดยใช้ขอบโปร่ง */
+    transition: border-color 0.3s;
+    /* เพิ่มการเปลี่ยนแปลงสีขอบเมื่อ hover */
+}
+
+.main-box:hover {
+    border: 4px solid #19ddd3;
+    border-color: #19ddd3;
+    /* สีที่คุณต้องการเมื่อ hover กล่องใหญ่ */
+}
+
+.main-box:hover .content-box-c a {
+    color: #10a8e4;
+    /* font-size: 25px; */
+    font-weight: bold;
+}
+
+.image-box {
+    width: auto;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    /* background: url(<imagesgame/gta>), lightgray 50% / cover no-repeat; */
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border: 2px solid #837b7b;
+}
+
+.top-left-box {
+    width: 120px;
+    height: 85px;
+    flex-shrink: 0;
+    border-radius: 22px 0px;
+    /* background: rgba(27, 89, 84, 0.90); */
+    /* background-color: #3498db; */
+    background: rgba(240, 243, 240, 0.363);
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.bottom-box-c {
+    display: flex;
+    align-items: center;
+    /* จัดให้เนื้อหาอยู่ตรงกลางแนวตั้ง */
+    justify-content: center;
+    /* จัดให้เนื้อหาอยู่ตรงกลางแนวนอน */
+    margin-top: auto;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.bottom-box-c img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
+    margin-bottom: -5px;
+}
+
+.sum-review {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.game-name-c {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    /* text-align: center; */
+    /* padding-left: 60px; */
+    position: relative;
+    z-index: 1;
+
+}
+
+.game-name-c::after {
+    padding-right: 75px;
+    margin-bottom: -7px;
+    content: "";
+    /* เพิ่มข้อความด้วย CSS content */
+    position: absolute;
+    /* เพิ่ม CSS position */
+    bottom: 0;
+    /* จัดให้อยู่ด้านล่าง */
+    left: 0;
+    /* จัดให้ติดขอบซ้าย */
+    width: 100%;
+    /* ทำให้เต็มความกว้าง */
+    height: 2px;
+    /* ความสูงของเส้นวิ่ง */
+    background-color: #10a8e4;
+    /* สีของเส้นวิ่ง */
+    transform: scaleX(0);
+    /* ทำให้เริ่มต้นด้วยขนาด 0 */
+    transform-origin: center;
+    /* จุดเริ่มต้นของการขยาย */
+    transition: transform 0.3s ease-in-out;
+    /* เพิ่มการเปลี่ยนแปลงการแสดงผลด้วยการเคลื่อนไหวที่น่าสนใจ */
+}
+
+.game-name-c:hover::after {
+    transform: scaleX(1);
+    /* เมื่อโฮเวอร์บน .game-name จะขยายเส้น */
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    /* Display items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    width: 550px;
+    /* background-color: #40be4b; */
+}
+
+.main-box {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.small-image {
+    max-width: 100%;
+    /* กำหนดความกว้างสูงสุดของรูปภาพ */
+    height: auto;
+    /* ใช้ 'auto' เพื่อรักษาสัดส่วนของรูปภาพ */
+    /* margin-bottom: 50px; */
+}
+
+.sh-f {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 200;
+}
+
+.sh-f button {
+    font-weight: 200;
+}
+
+.centered-button-f {
+    background-color: white;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: black;
+    width: 380px;
+    height: 45px;
+    border-radius: 15px;
+    margin-top: 55px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.centered-button-f:hover {
+    background-color: #227fd6;
+    border: 2px solid #fff;
+    color: white;
+}
+
+
+
+
+
+@keyframes rotateInnerCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreIndex {
+    --size: 130px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreIndex::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.top-left-box-in {
+    width: 170px;
+    height: 130px;
+    flex-shrink: 0;
+    border-radius: 15px 0px 40px 0px;
+    background: rgba(240, 243, 240, 0.363);
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreShow {
+    --size: 110px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreShow::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreShowRight {
+    --size: 70px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreShowRight::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreShowBotton {
+    --size: 70px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreShowBotton::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.container-score {
+    margin-top: 20px;
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* background-color: #f8f9fa; */
+    /* สีพื้นหลังของ Container */
+    font-size: 19px;
+}
+
+.col-content {
+    flex-grow: 1;
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column; /* ทำให้เนื้อหาอยู่ในคอลัมน์ */
+    align-items: center; /* ทำให้เนื้อหาอยู่ตรงกลางของ Col */
+}
+
+.col-content p {
+    margin-bottom: 15px;
+}
+
+.col-content-1 {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #ffffff; */
+    /* สีพื้นหลังของ Col 1 */
+    color: black;
+    /* สีตัวอักษร Col 1 */
+    flex: 1;
+}
+
+.col-content-2 {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #cce5ff; */
+    /* สีพื้นหลังของ Col 2 */
+    color: black;
+    /* สีตัวอักษร Col 2 */
+    flex: 1;
+}
+
+.col-content-3 {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #d4edda; */
+    /* สีพื้นหลังของ Col 3 */
+    color: black;
+    /* สีตัวอักษร Col 3 */
+    flex: 1;
+}
+
+.col-content-4 {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #f8d7da; */
+    /* สีพื้นหลังของ Col 4 */
+    color: black;
+    /* สีตัวอักษร Col 4 */
+    flex: 1;
+}
+

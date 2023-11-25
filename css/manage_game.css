@@ -1,0 +1,493 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.ContrainerManageGame {
+    max-width: 1600px;
+    /* กำหนดขนาดสูงสุดของกล่อง */
+    width: 90%;
+    /* ให้กล่องนี้มีขนาดเท่ากับ 90% ของพื้นที่ของหน้าจอ */
+    display: flex;
+    flex-direction: column;
+    /* แสดงเป็นคอลัมน์ต่อกัน */
+    align-items: center;
+    /* กึ่งกลางแนวตั้ง */
+    /* background-color: #6c7cda; */
+    margin: 0 auto;
+    /* วางตรงกลางของหน้าเว็บ */
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* กึ่งกลางแนวนอน */
+}
+
+/* สีพื้นหลังแต่ละคอลัมน์ */
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8 {
+    flex: 1;
+    /* margin: 10px; */
+    /* ระยะห่างระหว่างคอลัมน์ */
+    padding: 20px;
+    /* ขอบคอลัมน์ */
+    /* text-align: center; */
+    /* ข้อความกึ่งกลางในคอลัมน์ */
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8 {
+    width: 50%;
+    /* แบ่งพื้นที่เท่าๆ กันสำหรับทุกคอลัมน์ */
+}
+
+/* กำหนดสีพื้นหลังของแต่ละคอลัมน์ */
+.col1 {
+    /* background-color: #b46a69; */
+    margin-top: 30px;
+}
+
+.col1 p {
+    text-align: center;
+}
+
+.col2 {
+    /* background-color: #538d73; */
+    display: flex;
+    align-items: center;
+}
+
+.col2 input {
+    border: 2px solid #fff;
+}
+
+.col2 p {
+    margin-right: 20px;
+}
+
+.col3 {
+    /* background-color: #715b99; */
+}
+
+.col4 {
+    /* background-color: #947a50; */
+}
+
+.col5 {
+    /* background-color: #496a8d; */
+    display: flex;
+    align-items: center;
+}
+
+.col5 p {
+    margin-left: 20px;
+}
+
+.col5 select {
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.col5 select:hover {
+    background-color: #ffffffec;
+}
+
+.col6 {
+    /* background-color: #a35252; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col7 {
+    /* background-color: #528ca3; */
+    display: flex;
+    align-items: center;
+}
+
+.col8 {
+    /* background-color: #528ca3; */
+    display: flex;
+    align-items: center;
+}
+
+p.SizeText {
+    margin-left: 15px;
+}
+
+p.TemplateFile {
+    /* margin-left: 50px; */
+}
+
+input.UpLoadFile {
+    margin-left: 15px;
+}
+
+.col8 button{
+    margin-left: 15px;
+    font-weight: 200;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.pagination p {
+    margin-right: 10px;
+}
+
+.pagination input {
+    width: auto;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    /* border: 2px solid #2059e9; */
+    color: black;
+    border-radius: 8px;
+}
+
+.pagination span {
+    margin-right: 5px;
+}
+
+.tableM {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.tableM th {
+    color: black;
+}
+
+.table select {
+    /* background-color: #227fd6; */
+}
+
+.tableHeadersGameName,
+.tableHeadersRating,
+.tableHeadersCompany,
+.tableHeadersCategory,
+.tableHeadersReleaseDate,
+.tableHeadersRatingDesc {
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.tableHeadersGameName:hover,
+.tableHeadersRating:hover,
+.tableHeadersCompany:hover,
+.tableHeadersCategory:hover,
+.tableHeadersReleaseDate:hover,
+.tableHeadersRatingDesc:hover {
+    background-color: #ebebeb;
+}
+
+button.btn-g-e {
+    transition: background-color 0.5s, transform 0.5s;
+    background-color: #2E86AB;
+    font-weight: 200;
+}
+
+button.btn-g-e:hover {
+    background-color: #2e7691;
+    color: white;
+}
+
+button.btn-g-d {
+    transition: background-color 0.5s, transform 0.5s;
+    background-color: #e74c3c;
+    font-weight: 300;
+}
+
+button.btn-g-d:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #ebebeb;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+    /* width: 40%; */
+    width: 770px;
+    max-height: 90vh;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px solid #1974dd;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+.popup::-webkit-scrollbar {
+    width: 8px;
+}
+
+.popup::-webkit-scrollbar-thumb {
+    background-color: #a3a3a3;
+    border-radius: 6px;
+}
+
+.popup::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.popupContentEditGame {
+    text-align: left;
+    padding: 20px;
+    /* overflow-y: scroll; */
+}
+
+.popupContentEditGame p {
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+
+.popupContentEditGame label {
+    color: black;
+    font-size: 20px;
+    /* font-weight: bold; */
+    /* margin-bottom: 50px; */
+}
+
+#editGameForm input {
+    color: black;
+}
+
+.popupContentEditGame input {
+    border-radius: 10px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #2E86AB;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    /* padding: 5px; */
+}
+
+.buttonFotter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.buttonFotter button {
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    padding: 8px 16px;
+    /* เพิ่มขอบเขตในปุ่ม */
+    margin-right: 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+
+.buttonFotter button:nth-of-type(1) {
+    background-color: #e74c3c;
+    color: white;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+
+.buttonFotter button:nth-of-type(2) {
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+
+.buttonFotter button:nth-of-type(3) {
+    background-color: #2ecc71;
+    color: white;
+    transition: background-color 0.5s, transform 0.5s;
+
+}
+
+.buttonFotter button:nth-of-type(1):hover {
+    background-color: #c0392b;
+    font-weight: bold;
+}
+
+.buttonFotter button:nth-of-type(2):hover {
+    background-color: #2980b9;
+    font-weight: bold;
+}
+
+.buttonFotter button:nth-of-type(3):hover {
+    background-color: #27ae60;
+    font-weight: bold;
+}
+
+#editGameForm input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('../images/calendar\ black.png');
+    background-size: cover;
+    right: 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+button.fontWeight {
+    font-weight: 200;
+}
+
+p.imgText {
+    font-size: 300;
+}
+
+.horizontalImg {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.overflow-hidden img {
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    /* border: 2px solid #2980b9; */
+}
+
+.overflow-hidden {
+    border: 3px solid #2980b9;
+}
+
+#editGameForm select {
+    background-color: white;
+    color: black;
+    border: 2px solid #1974dd;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+button.btn-g-d-d {
+    width: 100%;
+    transition: background-color 0.5s, transform 0.5s;
+    background-color: #e74c3c;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+button.btn-g-d-d:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+.WeightText {
+    font-weight: bold;
+}
+
+.horizontal-lines-f {
+    width: auto;
+    height: 4px;
+    /* box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25); */
+    margin: 0 auto;
+    margin-top: 55px;
+    background-color: #dd194a;
+    margin-bottom: 40px;
+}
+
+.vertiImg .relative {
+    height: 670px;
+}
+
+/* เพิ่มสไตล์นี้เพื่อจำกัดจำนวนตัวอักษรและเพิ่มจุดไข่ปลา */
+.table td {
+    max-width: 170px;
+     /* ปรับความกว้างสูงสุดตามต้องการ */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ตัวเลือก: คุณสามารถเพิ่ม tooltip เพื่อแสดงเนื้อหาเต็มที่เมื่อโฮเวอร์ */
+.table td:hover {
+    overflow: visible;
+    white-space: normal;
+    z-index: 1;
+}
+
+.imgGame img {
+    border-radius: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+}

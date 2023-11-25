@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.ContrainerManageGameScore {
+    max-width: 1600px;
+    /* กำหนดขนาดสูงสุดของกล่อง */
+    width: 90%;
+    /* ให้กล่องนี้มีขนาดเท่ากับ 90% ของพื้นที่ของหน้าจอ */
+    display: flex;
+    flex-direction: column;
+    /* แสดงเป็นคอลัมน์ต่อกัน */
+    align-items: center;
+    /* กึ่งกลางแนวตั้ง */
+    /* background-color: #6c7cda; */
+    margin: 0 auto;
+    /* วางตรงกลางของหน้าเว็บ */
+    z-index: 1;
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* กึ่งกลางแนวนอน */
+}
+
+/* สีพื้นหลังแต่ละคอลัมน์ */
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6 {
+    flex: 1;
+    /* margin: 10px; */
+    /* ระยะห่างระหว่างคอลัมน์ */
+    padding: 20px;
+    /* ขอบคอลัมน์ */
+    /* text-align: center; */
+    /* ข้อความกึ่งกลางในคอลัมน์ */
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6 {
+    width: 50%;
+    /* แบ่งพื้นที่เท่าๆ กันสำหรับทุกคอลัมน์ */
+}
+
+/* กำหนดสีพื้นหลังของแต่ละคอลัมน์ */
+.col1 {
+    /* background-color: #b46a69; */
+    margin-top: 30px;
+}
+
+.col1 p {
+    text-align: center;
+}
+
+.col2 {
+    /* background-color: #538d73; */
+    display: flex;
+    align-items: center;
+}
+
+.col2 input {
+    border: 2px solid #fff;
+}
+
+.col2 p {
+    margin-right: 20px;
+}
+
+.col3 {
+    /* background-color: #715b99; */
+}
+
+.col4 {
+    /* background-color: #947a50; */
+}
+
+.col5 {
+    /* background-color: #496a8d; */
+    display: flex;
+    align-items: center;
+}
+
+.col5 p {
+    margin-left: 20px;
+}
+
+.col5 select {
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.col5 select:hover {
+    background-color: #ffffffec;
+}
+
+.col6 {
+    /* background-color: #a35252; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.pagination p {
+    margin-right: 10px;
+}
+
+.pagination input {
+    width: auto;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    /* border: 2px solid #2059e9; */
+    color: black;
+    border-radius: 8px;
+}
+
+.pagination span {
+    margin-right: 5px;
+}
+
+.tableM {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.tableM  th {
+    color: black;
+}
+
+.tableHeadersName,
+.tableHeadersEmail,
+.tableHeadersDate,
+.tableHeadersStatus {
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.tableHeadersName:hover,
+.tableHeadersEmail:hover,
+.tableHeadersDate:hover,
+.tableHeadersStatus:hover {
+    background-color: #ebebeb;
+}
+
+.table select {
+    /* background-color: #227fd6; */
+    background-color: #3498db;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.table select:hover {
+    background-color: #2980b9;
+}
+
+button.btn-g-d:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #ebebeb;
+}
+
+tr.text-lg td:nth-child(5) button.EditCategoryClear {
+    background-color: #e74c3c;
+    color: #fff;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 200;
+
+}
+
+tr.text-lg td:nth-child(5) button.EditCategoryClear:hover {
+    background-color: #ff6347;
+    color: #fff;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+}
+
+/* เพิ่มสไตล์นี้เพื่อจำกัดจำนวนตัวอักษรและเพิ่มจุดไข่ปลา */
+.table td {
+    max-width: 170px;
+     /* ปรับความกว้างสูงสุดตามต้องการ */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ตัวเลือก: คุณสามารถเพิ่ม tooltip เพื่อแสดงเนื้อหาเต็มที่เมื่อโฮเวอร์ */
+.table td:hover {
+    overflow: visible;
+    white-space: normal;
+    z-index: 1;
+}
+
+
+
+
+

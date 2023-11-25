@@ -1,0 +1,2163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+}
+
+.container-review {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* background-color: #19ddd3; */
+    /* max-width: 1600px;
+    margin: 0 auto; */
+    max-width: 2000px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+}
+
+.row-1 {
+    /* background-color: #3498db; */
+    /* height: 600px; */
+    margin-top: 40px;
+}
+
+.row-2 {
+    /* background-color: #e74c3c; */
+}
+
+.row-3 {
+    /* background-color: #27ae60; */
+}
+
+.row-4 {
+    /* background-color: #27ae60; */
+}
+
+.row-5 {
+    /* background-color: #27ae60; */
+}
+
+.row-6 {
+    /* background-color: #27ae60; */
+}
+
+.col {
+    flex: 1;
+    min-width: calc(33.33% - 40px);
+    /* คำนวณความกว้างของคอลัมน์ */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* เพิ่มสีพื้นที่สำหรับแต่ละรายการ */
+.col-1 {
+    /* background-color: #e74c3c; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.col-1 img {
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-2 {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: #19ddd3; */
+}
+
+.col-3 {
+    width: auto;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* background-color: #e2384f; */
+}
+
+.col-4 {
+    /* background-color: #3498db; */
+}
+
+.col-5 {
+    /* background-color: #f39c12; */
+}
+
+.col-6 {
+    /* background-color: #9b59b6; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    align-items: center;
+    /* จัดให้อยู่ตรงกลางแนวนอน */
+}
+
+.col-7 {
+    /* background-color: #59a3b6; */
+}
+
+.col-8 {
+    /* background-color: #59b659; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    align-items: center;
+    /* จัดให้อยู่ตรงกลางแนวนอน */
+}
+
+.col-9 {
+    background-color: #f39c12;
+}
+
+.rowOne,
+.rowTwo,
+.rowThree {
+    margin: 0 auto;
+    height: 33.33%; /* เพิ่มบรรทัดนี้ */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 80%;
+    /* background-color: #25c5bd; */
+}
+
+.rowOne p,
+.rowTwo p,
+.rowThree p {
+    /* margin-left: 200px; */
+}
+
+.Score3 {
+    /* margin-right: 200px; */
+     /* margin-left: 200px; */
+}
+
+.rowOne {
+    /* background-color: red; */
+
+}
+
+.rowTwo {
+    /* background-color: green; */
+
+}
+
+.rowThree {
+    /* background-color: blue; */
+
+}
+
+.topScore {
+    /* background-color: #f39c12; */
+    display: flex;
+    justify-content: center;
+}
+
+.centerScore {
+    height: 96%;
+    /* background-color: #ce2e71; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-footer-rg {
+    width: 1000px;
+    /* text-align: center; */
+    /* background-color: #2a6dd3; */
+    padding: 20px;
+    /* เพิ่มระยะขอบเพื่อทำให้เนื้อหาดูดี */
+    /* max-width: 1200px; */
+    /* กำหนดความกว้างสูงสุดของ .container-footer-rg */
+    margin: auto;
+    /* จัดให้ .container-footer-rg อยู่ตรงกลางทั้งแนวนอนและแนวตั้ง */
+    /* color: black; */
+    color: white;
+}
+
+.name-score-review {
+    display: flex;
+    /* margin: 0 auto; */
+    align-items: center;
+    /* margin-bottom: auto; */
+
+}
+
+button.write-review-button,
+button.write-post-review-button {
+    width: 170px;
+    min-width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: black;
+}
+
+.vertical-line {
+    width: 1px;
+    height: auto;
+    background: #FFF;
+    box-shadow: 0px 2px 1px 1px rgb(255, 255, 255);
+    /* margin-top: 1px; */
+    /* margin-bottom: 50px; */
+}
+
+.horizontal-lines {
+    width: 100%;
+    /* ให้ความกว้างเต็มหน้าจอ (viewport width) */
+    height: 2px;
+    /* box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25); */
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #fff;
+    /* margin-bottom: 50px; */
+    margin-top: 1px;
+}
+
+.horizontal-lines-foot {
+    width: 100%;
+    /* ให้ความกว้างเต็มหน้าจอ (viewport width) */
+    height: 2px;
+    /* box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25); */
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #fff;
+    /* margin-bottom: 50px; */
+    margin-top: 1px;
+    /* margin-bottom: 30px; */
+}
+
+.sort-review-rv {
+    display: flex;
+    /* float: right; */
+    justify-content: center;
+}
+
+.sort-review-rv p {
+    margin-right: 20px;
+}
+
+.sort-review-prv {
+    display: flex;
+    justify-content: center;
+}
+
+p.l-re-r {
+    margin-left: 20px;
+}
+
+.con-review {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 20px;
+    background-color: white;
+    border: 4px solid #fff;
+    transition: border-color 0.3s;
+    border-radius: 30px;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.con-review:hover {
+    border: 4px solid #19ddd3;
+    border-color: #19ddd3;
+}
+
+.header-left-con-review {
+    display: flex;
+    /* align-items: center; */
+    margin: 10px;
+}
+
+.circle-con-review {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #32a8a2;
+    /* margin-left: 40px; */
+    /* margin-top: 30px; */
+}
+
+.circle-con-review img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info-con-review {
+    /* margin-left: 20px; */
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.user-info-con-review p {
+    margin-left: 20px;
+}
+
+#userReview-con-review {
+    border: 2px solid #4FA39E;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.heading-con-review {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* เพิ่ม flex-wrap เพื่อให้ขึ้นบรรทัดใหม่เมื่อเกินขนาด */
+}
+
+.heading-con-review p {
+    /* margin: 1; */
+    /* padding: 0 50px; */
+    /* padding-left: 175px; */
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    /* ให้ข้อความไม่ขึ้นบรรทัดใหม่ */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* ให้ข้อความที่เกินขนาดแสดง ... */
+}
+
+.dropdownBox img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /* background-color: brown; */
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.dropdown-content li a {
+    /* background-color: #e2384f; */
+}
+
+.dropdown-content li a:hover {
+    /* background-color: #dd1933; */
+    color: white;
+}
+
+.con-review-p {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 20px;
+    background-color: white;
+    border: 4px solid #fff;
+    transition: border-color 0.3s;
+    border-radius: 30px;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.con-review-p:hover {
+    border: 4px solid #19ddd3;
+    border-color: #19ddd3;
+}
+
+.header-left-con-review-p {
+    display: flex;
+    /* align-items: center; */
+    margin: 10px;
+}
+
+.circle-con-review-p {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #32a8a2;
+    /* margin-left: 40px; */
+    /* margin-top: 30px; */
+}
+
+.circle-con-review-p img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info-con-review-p {
+    /* margin-left: 20px; */
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.user-info-con-review-p p {
+    margin-left: 20px;
+}
+
+#userReview-con-review-p {
+    border: 2px solid #4FA39E;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+#userReview-con-review-p-c {    
+    border: 2px solid #c43b64;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.heading-con-review-p {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* เพิ่ม flex-wrap เพื่อให้ขึ้นบรรทัดใหม่เมื่อเกินขนาด */
+}
+
+.heading-con-review-p p {
+    margin-left: 50px;
+    margin-right: 50px;
+    white-space: nowrap;
+    /* ให้ข้อความไม่ขึ้นบรรทัดใหม่ */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* ให้ข้อความที่เกินขนาดแสดง ... */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.count-review-review {
+    /* margin-right: 100px; */
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.re-cou {
+    margin-right: 100px;
+}
+
+button.write-review-button {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 270px;
+    height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 300;
+}
+
+button.write-post-review-button {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 270px;
+    height: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 300;
+}
+
+button.write-review-button:hover,
+button.write-post-review-button:hover {
+    background-color: #227fd6;
+    /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์เป็นสีเขียวอ่อน */
+    color: white;
+    /* เปลี่ยนสีข้อความเมื่อโฮเวอร์เป็นสีขาว */
+    border: 2px solid white;
+}
+
+.image-icon-index {
+    width: 35px;
+    /* ปรับขนาดความกว้างตามที่คุณต้องการ */
+    height: 35px;
+    /* ปรับขนาดความสูงตามที่คุณต้องการ */
+    margin-left: 20px;
+}
+
+.horizontal-line-comment {
+    content: "";
+    display: block;
+    border-top: 2px solid #c43b64;
+    /* สร้างเส้นแบ่งแนวนอน 1 พิกเซล */
+    width: 100%;
+    /* ความกว้างเต็มหน้าจอ */
+    margin-top: 25px;
+}
+
+.user-comment {
+    display: flex;
+    /* align-items: center; */
+    margin: 10px;
+    margin-top: 25px;
+    /* background-color: #19ddd3; */
+}
+
+.circle-con-review-p-user-comment {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #c43b64;
+    /* margin-left: 40px; */
+    /* margin-top: 30px; */
+}
+
+.circle-con-review-p-user-comment img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#userReview-con-review-p-user-comment {
+    border: 2px solid #c43b64;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+/* เพิ่มสไตล์ให้ปุ่ม "แสดงความคิดเห็น" */
+.view-comments[type="button"] {
+    align-self: flex-end;
+    /* จัดตำแหน่งให้อยู่ทางขวา */
+    margin-top: 30px;
+    /* ปรับระยะห่างด้านบน */
+    margin-bottom: 10px;
+    background-color: #227fd6;
+    color: white;
+    /* เปลี่ยนสีข้อความเป็นสีขาว */
+    border: none;
+    /* ลบเส้นขอบ */
+    border-radius: 15px;
+    /* กำหนดรูปร่างของปุ่มเป็นวงกลม */
+    width: 220px;
+    /* กำหนดความกว้างของปุ่ม */
+    height: 45px;
+    /* กำหนดความสูงของปุ่ม */
+    cursor: pointer;
+    /* แสดงเครื่องมือเมาส์เป็นประแบบชี้ */
+    font-size: 18px;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    font-weight: 200;
+}
+
+.view-comments[type="button"]:hover {
+    background-color: #378ee0;
+    /* border: 2px solid #25adc5; */
+}
+
+
+
+
+h2.write-text {
+    color: white;
+    /* margin-top: 80px; */
+    /* margin-left: 780px; */
+    font-size: 30px;
+}
+
+h2.write-text-post {
+    color: white;
+    /* margin-top: 80px; */
+    /* margin-left: -20px; */
+    font-size: 30px;
+}
+
+.main-box-rp {
+    /* background-color: #fff; */
+    display: none;
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    border: 2px solid #19ddd3;
+}
+
+.review-input p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 25px;
+    padding-left: 60px;
+}
+
+.rating-rg p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-left: 60px;
+}
+
+.review-input-text-rp {
+    /* padding-left: 40px; */
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 90%;
+    height: 150px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4FA39E;
+    border-radius: 10px;
+    resize: none;
+}
+
+button.create-review-button {
+    background-color: #19ddd3;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 300;
+}
+
+button.create-review-button:hover {
+    background-color: #25c5bd;
+    border: 2px solid #fff;
+}
+
+.rating-rg .playing-star-rg,
+.story-star-rg,
+.efficiency-star-rg {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: rgb(155, 155, 155);
+    padding-left: 60px;
+}
+
+.playing-star-rg i,
+.story-star-rg i,
+.efficiency-star-rg i {
+    columns: #e6e6e6;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.playing-star-rg i.active,
+.story-star-rg i.active,
+.efficiency-star-rg i.active {
+    color: #ff9c1a;
+}
+
+.backtotop {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 140px;
+}
+
+.backtotop:hover {
+    text-decoration: underline;
+}
+
+#back-to-top-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#back-to-top-icon-post {
+    width: 20px;
+    height: 20px;
+}
+
+.header-container {
+    display: flex;
+    display: none;
+    align-items: center;
+}
+
+.header-container-post {
+    display: flex;
+    display: none;
+    align-items: center;
+    /* background-color: #199fdd; */
+}
+
+.header-container-post a {
+    margin-left: -65px;
+}
+
+.centered-button {
+    background-color: white;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: black;
+    width: 380px;
+    height: 45px;
+    border-radius: 15px;
+    margin-top: 55px;
+    /* margin-bottom: 25px; */
+    font-size: 22px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.centered-button:hover {
+    background-color: #227fd6;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.centered-button-p {
+    background-color: white;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    color: black;
+    width: 380px;
+    height: 45px;
+    border-radius: 15px;
+    margin-top: 55px;
+    /* margin-bottom: 25px; */
+    font-size: 22px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.centered-button-p:hover {
+    background-color: #227fd6;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+
+.main-box-post {
+    /* background-color: #fff; */
+    display: none;
+    padding: 20px;
+    width: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    border: 2px solid #19ddd3;
+}
+
+.main-box-post:hover #review-content-one,
+.main-box-post:hover #review-content-two {
+    color: #19ddd3;
+}
+
+.main-box-post #review-content-one:hover,
+.main-box-post #review-content-two:hover {
+    color: rgb(21, 231, 179);
+}
+
+.review-input-text-post {
+    /* padding-left: 40px; */
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 90%;
+    height: 150px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+}
+
+.review-input-post p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 25px;
+    padding-left: 60px;
+    /* background-color: #2ea8e0; */
+}
+
+.rating-post p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    /* padding-left: 60px; */
+    margin-left: 60px;
+}
+
+.rating-post .playing-star-post,
+.story-star-post,
+.efficiency-star-post,
+.other,
+.others {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: rgb(155, 155, 155);
+    padding-left: 60px;
+}
+
+.playing-star-post i,
+.story-star-post i,
+.efficiency-star-post i,
+.other i,
+.others i {
+    columns: #e6e6e6;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.other i,
+.others i {
+    display: none;
+}
+
+.playing-star-post i.active,
+.story-star-post i.active,
+.efficiency-star-post i.active,
+.other i.active,
+.others i.active {
+    color: #ff9c1a;
+}
+
+.background-color-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+}
+
+.background-color-content2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+}
+
+
+/* CSS เพื่อซ่อนหน้าต่างรีวิวเมื่อเริ่มต้น */
+.review-window-content {
+    display: none;
+    border: 2px solid #19ddd3;
+
+}
+
+/* CSS สำหรับหน้าต่างรีวิวที่แสดง */
+.review-window-content.show {
+    display: block;
+}
+
+.review-window-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    z-index: 1000;
+}
+
+.review-window-content2 {
+    display: none;
+    border: 2px solid #19ddd3;
+
+}
+
+/* CSS สำหรับหน้าต่างรีวิวที่แสดง */
+.review-window-content2.show {
+    display: block;
+}
+
+.review-window-content2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    z-index: 1000;
+}
+
+
+.review-text-content p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    padding-left: 20px;
+    color: black;
+}
+
+.review-text-content2 p {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 20px;
+    padding-left: 20px;
+    color: black;
+}
+
+textarea#review-input-content-one {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4FA39E;
+    border-radius: 10px;
+    resize: none;
+    height: 55px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+textarea#review-input-content-two {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4FA39E;
+    border-radius: 10px;
+    resize: none;
+    height: 55px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+.review-controls-content {
+    margin-top: 20px;
+}
+
+.review-controls-content2 {
+    margin-top: 20px;
+}
+
+.button-clear,
+.button-confirm,
+.button-back {
+    width: 150px;
+}
+
+.button-clear2,
+.button-confirm2,
+.button-back2 {
+    width: 150px;
+}
+
+#confirm-button-content {
+    background-color: #227fd6;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-button-content {
+    background-color: #2E86AB;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content:hover {
+    background-color: #ff6347;
+}
+
+#confirm-button-content:hover {
+    background-color: #378ee0;
+}
+
+#back-button-content:hover {
+    background-color: #2e7691;
+}
+
+#confirm-button-content2 {
+    background-color: #227fd6;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-button-content2 {
+    background-color: #2E86AB;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content2 {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#clear-button-content2:hover {
+    background-color: #ff6347;
+}
+
+#confirm-button-content2:hover {
+    background-color: #378ee0;
+}
+
+#back-button-content2:hover {
+    background-color: #2e7691;
+}
+
+/* #clear-button-content2,
+#confirm-button-content2,
+#back-button-content2 {
+    background-color: #19ddd3;
+    color: #fff;
+    border: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#clear-button-content2:hover,
+#confirm-button-content2:hover,
+#back-button-content2:hover {
+    background-color: #25c5bd;
+    border: 2px solid #25a0c5;
+} */
+
+.create-button-container {
+    display: flex;
+    /* padding-left: 530px; */
+    justify-content: flex-end;
+}
+
+.create-add-review-button {
+    display: none;
+    background-color: #19ddd3;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* margin-left: 700px; */
+    font-size: 20px;
+    /* margin-left: 10px; */
+}
+
+.create-add-review-button:hover {
+    background-color: #25c5bd;
+    border: 2px solid #fff;
+}
+
+button.create-review-button-post {
+    background-color: #19ddd3;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    /* margin-left: 700px; */
+    font-size: 20px;
+    margin-right: 40px;
+    font-weight: 300;
+}
+
+button.create-review-button-post:hover {
+    background-color: #25c5bd;
+    border: 2px solid #fff;
+}
+
+#review-content-one {
+    cursor: pointer;
+    max-width: fit-content;
+    position: relative;
+}
+
+#review-content-one::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* ขนาดของเส้น */
+    background-color: rgb(21, 231, 179);
+    /* สีของเส้น */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    /* เพื่อให้มีเอฟเฟกต์ animation */
+    margin-bottom: -7px;
+}
+
+#review-content-one:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+#review-content-two {
+    cursor: pointer;
+    max-width: fit-content;
+    position: relative;
+}
+
+#review-content-two::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /* ขนาดของเส้น */
+    background-color: rgb(21, 231, 179);
+    /* สีของเส้น */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    /* เพื่อให้มีเอฟเฟกต์ animation */
+    margin-bottom: -7px;
+}
+
+#review-content-two:hover::after {
+    transform: scaleX(1);
+}
+
+.comment-show[type="button"] {
+    width: 270px;
+    height: 40px;
+    background-color: #227fd6;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.comment-show[type="button"]:hover {
+    background-color: #378ee0;
+    /* สีเมื่อมี hover ที่ปุ่ม comment-show */
+}
+
+.comment-final[type="button"] {
+    /* display: inline-block; */
+    width: 270px;
+    height: 40px;
+    background-color: #227fd6;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 720px;
+}
+
+.comment-final[type="button"]:hover {
+    background-color: #378ee0;
+    /* สีเมื่อมี hover ที่ปุ่ม hide */
+}
+
+.w-comment {
+    color: black;
+    text-align: left;
+    padding: 10px;
+}
+
+.radial-progress {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.radial-progress .circle {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.radial-progress .circle .mask,
+.radial-progress .circle .fill {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.radial-progress .circle .mask {
+    clip: rect(0, 100px, 200px, 100px);
+}
+
+.radial-progress .circle .mask.full,
+.radial-progress .circle .fill {
+    animation: fill 2s ease-in-out forwards;
+}
+
+.radial-progress .circle .mask.full {
+    background-color: #3498db;
+}
+
+.radial-progress .circle .mask.half {
+    right: 0;
+    clip: rect(0, 100px, 200px, 0);
+}
+
+.radial-progress .circle .mask.half .fill {
+    left: 100px;
+    background-color: #3498db;
+}
+
+.radial-progress .circle .mask.half .fill.fix {
+    left: 0;
+    background-color: #3498db;
+}
+
+.radial-progress .circle .fill {
+    background-color: #3498db;
+}
+
+.radial-progress .circle .shadow {
+    width: 92%;
+    height: 92%;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.radial-progress .circle .inset {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.radial-progress .circle .percentage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.radial-progress .circle .percentage .score {
+    font-weight: bold;
+}
+
+@keyframes fill {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+
+
+@keyframes rotateInnerCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+.mainScore {
+    --size: 330px;
+    --fg: rgb(36, 164, 224);
+    /* --fg: linear-gradient(180deg, #00A3FF 0%, #00FFF0 100%); */
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    /* color: var(--fg); */
+    color: white;
+    font-weight: bold;
+}
+
+.mainScore::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.rowOne .Score3,
+.rowTwo .Score3,
+.rowThree .Score3 {
+    --size: 130px; /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.rowOne .Score3::before,
+.rowTwo .Score3::before,
+.rowThree .Score3::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.container-score-review {
+    margin-top: 20px;
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* background-color: #f8f9fa; */
+    /* สีพื้นหลังของ Container */
+    font-size: 19px;
+    flex-wrap: wrap;
+}
+
+.col-content-review {
+    flex-grow: 1;
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column; /* ทำให้เนื้อหาอยู่ในคอลัมน์ */
+    align-items: center; /* ทำให้เนื้อหาอยู่ตรงกลางของ Col */
+    /* background-color: #004085; */
+}
+
+.col-content-review p {
+    margin-bottom: 15px;
+}
+
+.col-content-1-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #ffffff; */
+    /* สีพื้นหลังของ Col 1 */
+    color: black;
+    /* สีตัวอักษร Col 1 */
+    flex: 1;
+}
+
+.col-content-2-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #cce5ff; */
+    /* สีพื้นหลังของ Col 2 */
+    color: black;
+    /* สีตัวอักษร Col 2 */
+    flex: 1;
+}
+
+.col-content-3-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #d4edda; */
+    /* สีพื้นหลังของ Col 3 */
+    color: black;
+    /* สีตัวอักษร Col 3 */
+    flex: 1;
+}
+
+.col-content-4-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #f8d7da; */
+    /* สีพื้นหลังของ Col 4 */
+    color: black;
+    /* สีตัวอักษร Col 4 */
+    flex: 1;
+}
+
+@keyframes rotateInnerCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreShowReview {
+    --size: 70px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreShowReview::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/* สร้างคลาสสำหรับแต่ละวงกลม */
+.ScoreShowPostReview {
+    --size: 70px;
+    /* ปรับขนาดตามต้องการ */
+    --fg: rgb(36, 164, 224);
+    --bg: rgb(243, 227, 234);
+    --pgPercentage: var(--value);
+    animation: growProgressBar 1s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, rgb(46, 120, 206) 80%, transparent 0 99.9%),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-size: calc(var(--size) / 5);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+/* เพิ่มสไตล์ของแต่ละคลาส */
+.ScoreShowPostReview::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+.container-score-post-review {
+    margin-top: 20px;
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 10px;
+    /* background-color: #327fcc; */
+    /* สีพื้นหลังของ Container */
+    font-size: 19px;
+    flex-wrap: wrap;
+}
+
+.col-content-post-review {
+    flex-grow: 1;
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column; /* ทำให้เนื้อหาอยู่ในคอลัมน์ */
+    align-items: center; /* ทำให้เนื้อหาอยู่ตรงกลางของ Col */
+    /* background-color: #c2cc32; */
+}
+
+.col-content-post-review p {
+    margin-bottom: 15px;
+}
+
+.col-content-1-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #ffffff; */
+    /* สีพื้นหลังของ Col 1 */
+    color: black;
+    /* สีตัวอักษร Col 1 */
+    flex: 1;
+}
+
+.col-content-2-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #cce5ff; */
+    /* สีพื้นหลังของ Col 2 */
+    color: black;
+    /* สีตัวอักษร Col 2 */
+    flex: 1;
+}
+
+.col-content-3-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #d4edda; */
+    /* สีพื้นหลังของ Col 3 */
+    color: black;
+    /* สีตัวอักษร Col 3 */
+    flex: 1;
+}
+
+.col-content-4-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #f8d7da; */
+    /* สีพื้นหลังของ Col 4 */
+    color: black;
+    /* สีตัวอักษร Col 4 */
+    flex: 1;
+}
+
+.col-content-5-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #ffffff; */
+    /* สีพื้นหลังของ Col 1 */
+    color: black;
+    /* สีตัวอักษร Col 1 */
+    flex: 1;
+}
+
+.col-content-6-post-review {
+    /* border: 1px solid #ddd; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin: 5px;
+    /* background-color: #cce5ff; */
+    /* สีพื้นหลังของ Col 2 */
+    color: black;
+    /* สีตัวอักษร Col 2 */
+    flex: 1;
+}
+
+.conReviewScore {
+    width: 100%;
+    /* background-color: #fff; */
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.rowReview {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.colReview {
+    flex: 1;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.col1Review {
+    /* background-color: #ffcccc; */
+    /* สีส้มอ่อน */
+}
+
+.col2Review {
+    /* background-color: #ccffcc; */
+    /* สีเขียวอ่อน */
+}
+
+.conPostScore {
+    width: 100%;
+    /* background-color: #fff; */
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.rowPost {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+
+.colPost {
+    flex: 1;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.col1Post {
+    /* background-color: #ffcccc; */
+    /* สีส้มอ่อน */
+}
+
+.col2Post {
+    /* background-color: #ccffcc; */
+    /* สีเขียวอ่อน */
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    z-index: 1000;
+    width: 1200px;
+    z-index: 1000;
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 95vh;
+    padding: 10px;
+}
+
+.popup-content {
+    max-height: 95vh;
+    overflow-y: scroll;
+    border-radius: 20px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ffffff transparent; /* Color of the thumb and track for Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.popup-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Color of the thumb for WebKit */
+    border-radius: 6px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the track for WebKit */
+}
+
+
+.con-review-comment {
+    /* display: flex;
+    flex-direction: column; */
+    padding: 15px;
+    /* background-color: white; */
+    border-radius: 20px;
+    /* width: 100%; */
+}
+
+.rowComent {
+    padding: 5px;
+
+    /* display: flex; */
+}
+
+.colComent1,
+.colComent2,
+.colComent3,
+.colComent4,
+.colComent5,
+.colComent6 {
+    padding: 10px;
+
+}
+
+.colComent1 {
+    /* background-color: #3498db; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 94%;
+    border-radius: 15px;
+    z-index: 999;
+}
+
+.colComent1 p {
+    flex: 1;
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    margin-left: 80px;
+    color: #FFF;
+}
+
+button.CloseWindowsComent {
+    font-weight: 200;
+}
+
+.colComent2 {
+    /* background-color: #2ecc71; */
+    margin-top: 80px;
+}
+
+.colComent3 {
+    /* background-color: #e74c3c; */
+}
+
+.colComent4 {
+    /* background-color: #f39c12; */
+}
+
+.colComent5 {
+    /* background-color: #9b59b6; */
+}
+
+.colComent6 {
+    /* background-color: #ecf0f1; */
+    display: flex;
+    justify-content: center;
+}
+
+.colComent6 button {
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* .hide-button[type="button"] {
+    width: 270px;
+    height: 40px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hide-button[type="button"]:hover {
+    background-color: #ff6347;
+} */
+
+.containerAuthor {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    /* border: 3px solid salmon; */
+}
+
+.rowAuthor {
+    margin-bottom: 10px;
+    /* background-color: #004085; */
+}
+
+.colAuthor1 {
+    display: flex;
+    flex: 1;
+    /* background-color: #3498db; */
+    padding: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.colAuthor2 {
+    margin: 0 auto;
+    width: 90%;
+    flex: 1;
+    /* background-color: #34db50; */
+    /* padding: 5px; */
+    color: white;
+    text-align: center;
+}
+
+.colAuthor3 {
+    margin: 0 auto;
+    width: 90%;
+    flex: 1;
+    /* background-color: #34db50; */
+    /* padding: 5px; */
+    color: black;
+    /* text-align: center; */
+}
+
+.colAuthor3 p {
+    margin-top: 20px;
+}
+
+.colAuthor4 {
+    margin: 0 auto;
+    width: 90%;
+    flex: 1;
+}
+
+.colAuthor5 {
+    display: flex;
+    flex: 1;
+    /* background-color: #3498db; */
+    padding: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.colAuthor6 {
+    margin: 0 auto;
+    width: 90%;
+    flex: 1;
+}
+
+.CommentButton {
+    text-align: right;
+    margin-right: 55px;
+}
+
+.CommentButton button{
+    font-weight: 200;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #227fd6;
+    border: none;
+}
+
+.CommentButton button:hover{
+    background-color: #378ee0;
+}
+
+.circle-con-review-p-Author1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #32a8a2; 
+    /* margin-left: 40px; */
+    /* margin-top: 30px; */
+}
+
+.circle-con-review-p-Author1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle-con-review-p-Author11 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #c43b64; 
+    /* margin-left: 40px; */
+    /* margin-top: 30px; */
+}
+
+.circle-con-review-p-Author11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info-con-review-p-Author1 {
+    /* margin-left: 20px; */
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.user-info-con-review-p-Author1 p {
+    margin-left: 20px;
+}
+
+.comment-post {
+    display: flex;
+    align-items: center;
+}
+
+.comment-post i {
+    margin-left: 30px;
+}
+
+.comment-post p {
+    margin-left: 25px;
+    font-size: 22px;
+}
+
+button.ShowMore {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+
+.comment-post-p {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.comment-post-p i {
+    margin-left: 30px;
+}
+
+.comment-post-p p {
+    margin-left: 25px;
+    font-size: 22px;
+}
+
+button.ShowMore {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+
+
+
+
+

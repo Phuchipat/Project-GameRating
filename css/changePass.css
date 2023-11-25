@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.container-cp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    /* margin-bottom: 60px; */
+    /* background-color: #19ddd3; */
+}
+
+.change-password-form {
+    width: 100%; /* ทำให้ขนาดของแบบฟอร์มเต็มกว้างของ container-cp */
+    max-width: 700px; /* กำหนดความกว้างสูงสุด */
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    /* background: linear-gradient(90deg, #194F4A 0%, rgba(27, 89, 84, 0.75) 100%); */
+    /* background-color: white; */
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border: 2px solid #19ddd3;
+    /* background-color: burlywood; */
+}
+
+.change-password-form h2 {
+    font-size: 25px;
+    /* margin-bottom: 20px; */
+    display: flex;
+    align-items: center;
+    /* จัดเนื้อหาให้อยู่กลางแนวตั้ง */
+    justify-content: center;
+    /* จัดเนื้อหาให้อยู่กลางแนวนอน */
+}
+
+.change-password-form .form-group {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+    text-align: left;
+}
+
+.change-password-form label {
+    /* margin-bottom: 10px; */
+}
+
+.change-password-form input {
+    width: auto;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    /* background-color: salmon; */
+    /* height: 40px; */
+    /* color: black; */
+}
+
+.forgot-password {
+    /* text-align: right; */
+    /* margin-bottom: 10px; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.forgot-password-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.forgot-password-link:hover {
+    color: #25c5bd;
+    text-decoration: underline; /* เพิ่มเส้นใต้ข้อความเมื่อ hover (ถ้าคุณต้องการ) */
+}
+
+.checkbox-p {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.show-pass-log:hover {
+    color: rgb(51, 189, 207); /* เปลี่ยนสีข้อความเมื่อ hover */
+    text-decoration: underline; /* เพิ่มเส้นใต้ข้อความเมื่อ hover (ถ้าคุณต้องการ) */
+}
+
+.change-password-button {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #227fd6;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.change-password-button:hover {
+    background-color: #378ee0;
+}
+
+.change-password-button[type="button"] {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #227fd6;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 200;
+}
+
+.change-password-button[type="button"]:hover {
+    background-color: #378ee0;
+}
+
+.change-password-form [type="password"] {
+    width: auto;
+    padding: 10px 30px 10px 10px;
+    /* เพิ่มช่องเพื่อให้ภาพไม่ทับข้อความ */
+    /* border: none; */
+    /* border-radius: 30px; */
+    /* margin-bottom: 10px; */
+    background-image: url('../images/lock\ b.png');
+    /* URL ของภาพที่คุณต้องการใช้ */
+    background-repeat: no-repeat;
+    /* ไม่ให้รูปภาพทำซ้ำ */
+    background-position: right 10px center;
+    /* จัดตำแหน่งภาพที่ต้องการ (ขวาตรงกลาง) */
+    background-size: 20px 20px;
+    /* ขนาดของภาพ */
+    padding-right: 30px;
+    /* เพิ่มช่องว่างข้างขวาเพื่อไม่ให้ข้อความทับภาพ */
+    padding-left: 20px;
+}
+
+/* .form-group input[type="password"] {
+    border: 2px solid #19ddd3;
+    background-color: white;
+} */
+
+.show-pass-log {
+    margin-left: 10px;
+}
+

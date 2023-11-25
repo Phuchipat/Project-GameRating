@@ -1,0 +1,83 @@
+.dropdown img {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+#rattingBox {
+    margin-left: -280px;
+}
+
+.flex-none{
+    z-index: 999;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Maitree', serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+    font-family: 'Pridi', serif;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Taviraj', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#rattingBox,
+#CategoryNavbar,
+#ProfileNavbar {
+    margin-top: 25px;
+}
+
+#ProfileNavbar li a {
+    font-weight: 300;
+}
+
+button.NavbarSearch {
+    border: 1px solid;
+    margin-left: 2px;
+}
+
+button.NavbarSearch:hover {
+    border: 1px solid;
+}
+
+.input-group input {
+    border: 1px solid;
+}
+
+.ManageDrop {
+    margin-top: 25px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}

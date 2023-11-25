@@ -1,0 +1,15 @@
+Options -Indexes
+AddDefaultCharset utf-8
+#ErrorDocument
+# HTID:8639091: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:8639091:
+# Rewrite
+RewriteEngine ON
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#Home ----------------------------------------------------->
+
+RewriteRule ^Home?$ index.php [QSA,L]
